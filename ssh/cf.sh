@@ -28,7 +28,7 @@ fi
 clear
 apt install jq curl -y
 DOMAIN=autosc.me
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c6)
+sub=$(</dev/urandom tr -dc a-z0-9 | head -c2)
 SUB_DOMAIN=${sub}.autosc.me
 CF_ID=awaledyan@gmail.com
 CF_KEY=7c9a592ee3186932780cffb3f1b6dbfee8084
