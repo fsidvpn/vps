@@ -448,6 +448,7 @@ wget -O vlessmenu "https://raw.githubusercontent.com/fsidvpn/vps/main/update/vle
 wget -O trmenu "https://raw.githubusercontent.com/fsidvpn/vps/main/update/trmenu.sh"
 wget -O trgomenu "https://raw.githubusercontent.com/fsidvpn/vps/main/update/trgomenu.sh"
 wget -O setmenu "https://raw.githubusercontent.com/fsidvpn/vps/main/update/setmenu.sh"
+wget -O running "https://raw.githubusercontent.com/fsidvpn/vps/main/update/running.sh"
 
 
 chmod +x portsshnontls
@@ -511,6 +512,7 @@ chmod +x addtrgo
 chmod +x deltrgo
 chmod +x renewtrgo
 chmod +x cektrgo
+chmod +x running
 echo "0 5 * * * root clearlog && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
