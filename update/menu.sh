@@ -129,7 +129,7 @@ echo -e "
 [${green}07${NC}]${color1} •${color3}$bd Panel Vless (${color2}menu-vless${color3})
 [${green}08${NC}]${color1} •${color3}$bd Panel Trojan (${color2}menu-trojan${color3})
 [${green}09${NC}]${color1} •${color3}$bd Add Subdomain For Vps (${color2}addhost${color3})
- [${green}10${NC}]${color1} •${color3}$bd Renew Certificate V2ray (${color2}cert${color3})
+[${green}10${NC}]${color1} •${color3}$bd Renew Certificate V2ray (${color2}cert${color3})
 [${green}11${NC}]${color1} •${color3}$bd Change Port All Acount (${color2}menu-port${color3})
 [${green}12${NC}]${color1} •${color3}$bd cek status layanan (${color2}running${color3})
 [${green}13${NC}]${color1} •${color3}$bd webmin menu (${color2}webmin${color3})
