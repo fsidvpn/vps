@@ -82,7 +82,7 @@ PUBLIC_IP=$(wget -qO- ipinfo.io/ip);
 else
 PUBLIC_IP=$IP
 fi
-source /var/lib/akbarstorevpn/ipvps.conf
+source /var/lib/fsidvpn/ipvps.conf
 if [[ "$IP2" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
