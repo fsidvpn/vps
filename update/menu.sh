@@ -134,7 +134,7 @@ echo -e "
 [${green}11${NC}]${color1} •${color3}$bd Change Port All Acount (${color2}menu-port${color3})
 [${green}12${NC}]${color1} •${color3}$bd cek status layanan (${color2}running${color3})
 [${green}13${NC}]${color1} •${color3}$bd webmin menu (${color2}webmin${color3})
-[${green}14${NC}]${color1} •${color3}$bd limit bandwith speed server (${color2}limit${color3})
+[${green}14${NC}]${color1} •${color3}$bd cek bandwith (${color2}vnstat${color3})
 [${green}15${NC}]${color1} •${color3}$bd reboot vps (${color2}reboot${color3})
 [${green}16${NC}]${color1} •${color3}$bd speedtest (${color2}speedtest${color3})
 [${green}17${NC}]${color1} •${color3}$bd info script auto install (${color2}info${color3})
@@ -188,7 +188,7 @@ running
 wbmn
 ;;
 14)
-limitspeed
+stat
 ;;
 15)
 reboot
