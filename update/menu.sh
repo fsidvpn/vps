@@ -200,9 +200,9 @@ speedtest
 info
 ;;
 0 | 00)
-exit
+menu
 ;;
 *)
-menu
+exit
 ;;
 esac
