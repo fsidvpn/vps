@@ -103,17 +103,18 @@ echo -e ""
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 DOMAIN=$(cat /etc/xray/domain)
 CITY=$(curl -s ipinfo.io/city )
-#RAM
+up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
 tram=$( free -m | awk 'NR==2 {print $2}' )
 echo -e ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e " ❇️$bd ISP Name          ${color1} •${color3}$bd $ISP"
-echo -e " ❇️$bd City              ${color1} •${color3}$bd $CITY"
+echo -e " ❇️$bd City             ${color1} •${color3}$bd $CITY"
 echo -e " ❇️$bd Total RAM         ${color1} •${color3}$bd $tram MB"
 echo -e " ❇️$bd IP VPS            ${color1} •${color3}$bd $MYIP"
 echo -e " ❇️$bd DOMAIN VPS        ${color1} •${color3}$bd $DOMAIN"
+echo -e " ❇️$bd Waktu Aktif       ${color1} •${color3}$bd $up"
 echo -e " ❇️$bd Client Name       ${color1} •${color3}$bd $Name"
 echo -e " ❇️$bd Expiry script     ${color1} •${color3}$bd $Exp"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
