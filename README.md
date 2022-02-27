@@ -111,7 +111,7 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 • Autoreboot On 05.00 GMT +7
 
-• Futo Delete Expired Account
+• Auto Delete Expired Account
 
 • Full Orders For Various Services
 
@@ -125,4 +125,4 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 ------------
 **Telegram**
 ------------
-[Senovpn](https://t.me/senovpn)
+[Senovpn](https://t.me/FER1DEV)
