@@ -456,6 +456,8 @@ netfilter-persistent reload
 cd /usr/bin
 wget -O addhost "https://${akbarvpn}/addhost.sh"
 wget -O about "https://${akbarvpn}/about.sh"
+wget -O stat "https//${akbarvpn}/stat.sh
+wget -O banner "https://${akbarvpn}/banner.sh
 wget -O menu "https://raw.githubusercontent.com/fsidvpn/vps/main/update/menu.sh"
 wget -O addssh "https://${akbarvpn}/addssh.sh"
 wget -O trialssh "https://${akbarvpn}/trialssh.sh"
@@ -517,6 +519,8 @@ chmod +x portsshnontls
 chmod +x portsshws
 chmod +x ssh
 chmod +x l2tp
+chmod +x banner
+chmod +x stat
 chmod +x bannerku
 chmod +x sstpp
 chmod +x wgr
