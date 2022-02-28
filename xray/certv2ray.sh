@@ -79,7 +79,7 @@ fi
 clear
 echo start
 sleep 0.5
-source /var/lib/akbarstorevpn/ipvps.conf
+source /var/lib/fsidvpn/ipvps.conf
 domain=$(cat /etc/xray/domain)
 sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 cd /root/
