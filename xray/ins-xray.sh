@@ -292,7 +292,7 @@ cat > /etc/xray/config.json << END
       }
     },
     {
-      "port": 2083,
+      "port": 443,
       "protocol": "trojan",
       "settings": {
         "clients": [
