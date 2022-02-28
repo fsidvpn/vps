@@ -100,7 +100,7 @@ exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#xray-trojan$/a\#&# '"$user $exp"'\
 },{"password": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
 systemctl restart xray.service
-trojanlink="trojan://${user}@${domain}:443"
+trojanlink="trojan://${user}@${domain}:8443"
 service cron restart
 clear
 echo -e ""
@@ -108,7 +108,7 @@ echo -e "======-XRAYS/TROJAN-======"
 echo -e "Remarks  : ${user}"
 echo -e "IP/Host  : ${MYIP}"
 echo -e "Address  : ${domain}"
-echo -e "Port     : 443"
+echo -e "Port     : 8443"
 echo -e "Key      : ${user}"
 echo -e "Created  : $hariini"
 echo -e "Expired  : $exp"
