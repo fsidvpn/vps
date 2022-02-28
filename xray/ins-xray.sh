@@ -143,7 +143,7 @@ cat > /etc/xray/config.json << END
   },
   "inbounds": [
     {
-      "port": 8443,
+      "port": 2083,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -214,7 +214,7 @@ cat > /etc/xray/config.json << END
       }
     },
     {
-      "port": 8443,
+      "port": 2083,
       "protocol": "vless",
       "settings": {
         "clients": [
