@@ -99,8 +99,8 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/var/lib/akbarstorevpn/data-user-sstp")
 		fi
 	done
 read -p "Expired (Days): " masaaktif
-user=$(grep -E "^### " "/var/lib/akbarstorevpn/data-user-sstp" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
-exp=$(grep -E "^### " "/var/lib/akbarstorevpn/data-user-sstp" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
+user=$(grep -E "^### " "/var/lib/fsidvpn/data-user-sstp" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
+exp=$(grep -E "^### " "/var/lib/fsidvpn/data-user-sstp" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
 now=$(date +%Y-%m-%d)
 d1=$(date -d "$exp" +%s)
 d2=$(date -d "$now" +%s)
