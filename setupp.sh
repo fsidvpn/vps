@@ -43,7 +43,7 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 IZIN=$(wget -qO- ipinfo.io/ip);
 
-rm -f setup.sh
+rm -f setupp.sh
 clear
 if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
