@@ -97,10 +97,10 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/var/lib/akbarstorevpn/data-user-sstp")
 			read -rp "Pilih salah satu [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
 		fi
 	done
-Client=$(grep -E "^###" /var/lib/akbarstorevpn/data-user-sstp | cut -d ' ' -f 2-3 | sed -n "$CLIENT_NUMBER"p)
-user=$(grep -E "^###" /var/lib/akbarstorevpn/data-user-sstp | cut -d ' ' -f 2 | sed -n "$CLIENT_NUMBER"p)
-exp=$(grep -E "^###" /var/lib/akbarstorevpn/data-user-sstp | cut -d ' ' -f 3 | sed -n "$CLIENT_NUMBER"p)
-sed -i "/^### $user $exp/d" /var/lib/akbarstorevpn/data-user-sstp
+Client=$(grep -E "^###" /var/lib/fsidvpn/data-user-sstp | cut -d ' ' -f 2-3 | sed -n "$CLIENT_NUMBER"p)
+user=$(grep -E "^###" /var/lib/fsidvpn/data-user-sstp | cut -d ' ' -f 2 | sed -n "$CLIENT_NUMBER"p)
+exp=$(grep -E "^###" /var/lib/fsidvpn/data-user-sstp | cut -d ' ' -f 3 | sed -n "$CLIENT_NUMBER"p)
+sed -i "/^### $user $exp/d" /var/lib/fsidvpn/data-user-sstp
 sed -i '/^'"$user"'/d' /home/sstp/sstp_account
 clear
 echo ""
