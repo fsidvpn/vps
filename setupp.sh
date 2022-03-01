@@ -53,9 +53,9 @@ mkdir /var/lib/fsidvpn;
 echo "IP=" >> /var/lib/fsidvpn/ipvps.conf
 wget https://${akbarvpn}/cf.sh && chmod +x cf.sh && ./cf.sh
 #install v2ray
-wget https://${akbarvpnnnnnn}/ins-xray.sh && chmod +x ins-xrayy.sh && screen -S xray ./ins-xrayy.sh
+wget https://${akbarvpnnnnnn}/ins-xray.sh && chmod +x ins-xrayy.sh && screen -S xrayy ./ins-xrayy.sh
 #install ssh ovpn
-wget https://${akbarvpn}/ssh-vpn.sh && chmod +x ssh-vpnn.sh && screen -S ssh-vpn ./ssh-vpnn.sh
+wget https://${akbarvpn}/ssh-vpn.sh && chmod +x ssh-vpnn.sh && screen -S ssh-vpnn ./ssh-vpnn.sh
 wget https://${akbarvpnn}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
 wget https://${akbarvpnnn}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
@@ -83,7 +83,7 @@ rm -f /root/ohp.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
-Documentation=https://t.me/Akbar218
+Documentation=https://t.me/fsidvpn
 
 [Service]
 Type=oneshot
