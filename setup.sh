@@ -215,11 +215,15 @@ echo "----------------------AutoScript By FsidVPN Project----------------------"
 echo ""
 echo " Reboot 15 Sec"
 sleep 15
+rm -f license
+rm -f domain
 rm -f setup.sh
 reboot
 else
 red "Permission Denied!"
 exit 0
 fi
+cd
+rm -f license
 rm -f setup.sh
 clear
