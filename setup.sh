@@ -100,6 +100,10 @@ red "Your script need to update first !"
 exit 0
 elif [ "$res" = "Permission Accepted..." ]; then
 figlet slant "installing"
+else
+red "Permission Denied!"
+exit 0
+fi
 clear
 if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
@@ -215,15 +219,6 @@ echo "----------------------AutoScript By FsidVPN Project----------------------"
 echo ""
 echo " Reboot 15 Sec"
 sleep 15
-rm -f license
-rm -f domain
 rm -f setup.sh
 reboot
-else
-red "Permission Denied!"
-exit 0
-fi
-cd
-rm -f license
-rm -f setup.sh
-clear
+
