@@ -159,6 +159,7 @@ echo "----------------------AutoScript By FsidVPN Project----------------------"
 echo ""
 echo " Reboot 15 Sec"
 sleep 15
+rm -f domain
 rm -f setup.sh
 reboot
 
