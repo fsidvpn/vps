@@ -43,13 +43,13 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 # Service & Port
 
-• OpenSSH                 : 8443, 22
+• OpenSSH                 : 443, 22
 
 • OpenVPN                 : TCP 1194, UDP 2200, SSL 990
 
-• Stunnel5                : 8443, 445, 777
+• Stunnel5                : 443, 445, 777
 
-• Dropbear                : 8443, 109, 143
+• Dropbear                : 443, 109, 143
 
 • Squid Proxy             : 3128, 8080
 
@@ -71,11 +71,11 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 • SS-OBFS HTTP            : 3443-3543
 
-• XRAYS Vmess TLS         : 443
+• XRAYS Vmess TLS         : 8443
 
 • XRAYS Vmess None TLS    : 80
 
-• XRAYS Vless TLS         : 443
+• XRAYS Vless TLS         : 8443
 
 • XRAYS Vless None TLS    : 80
 
@@ -125,4 +125,4 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 ------------
 **Telegram**
 ------------
-[Fsidvpn] (https://t.me/FER1DEV
+[Fsidvpn](https://t.me/FER1DEV)
