@@ -140,16 +140,16 @@ cd
 fi
 done
 /etc/init.d/ssrmu restart
-data=( `cat /var/lib/akbarstorevpn/data-user-sstp | grep '^###' | cut -d ' ' -f 2`);
+data=( `cat /var/lib/fsidvpn/data-user-sstp | grep '^###' | cut -d ' ' -f 2`);
 now=`date +"%Y-%m-%d"`
 for user in "${data[@]}"
 do
-exp=$(grep -w "^### $user" "/var/lib/akbarstorevpn/data-user-sstp" | cut -d ' ' -f 3)
+exp=$(grep -w "^### $user" "/var/lib/fsidvpn/data-user-sstp" | cut -d ' ' -f 3)
 d1=$(date -d "$exp" +%s)
 d2=$(date -d "$now" +%s)
 exp2=$(( (d1 - d2) / 86400 ))
 if [[ "$exp2" = "0" ]]; then
-sed -i "/^### $user $exp/d" "/var/lib/akbarstorevpn/data-user-sstp"
+sed -i "/^### $user $exp/d" "/var/lib/fsidvpn/data-user-sstp"
 sed -i '/^'"$user"'/d' /home/sstp/sstp_account
 fi
 done
