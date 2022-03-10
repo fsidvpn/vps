@@ -43,7 +43,7 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 ### Os Supported
 
-• Debian 10 Only
+• Debian 9 & 10 (Recommended)
 
 • Ubuntu 18.04 & 20.04 (Recommended)
 
