@@ -98,7 +98,7 @@ if [[ -e /etc/wireguard/params ]]; then
 	exit 1
 fi
 
-echo -e "${Info} Wireguard Script By geovpn"
+echo -e "${Info} Wireguard Script By fsidvpn"
 # Detect public IPv4 address and pre-fill for the user
 
 # Detect public interface and pre-fill for the user
